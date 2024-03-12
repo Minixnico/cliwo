@@ -1,0 +1,247 @@
+body {
+  margin: 2%;
+  padding: 0;
+  background-color: #b7d4fa;
+  font-family: "Arial", sans-serif; /* Define la fuente aquí para que se aplique globalmente */
+}
+
+/* Estilos generales para botones */
+.boton,
+.login-container form button {
+  display: flex;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit; /* Usa la fuente definida globalmente */
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.boton:hover,
+.login-container form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th,
+td {
+  border: 1px solid #863168;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #6062b5;
+  color: #000;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Contenedores y layout */
+.registro,
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registro {
+  height: 85vh;
+}
+
+.login-container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el logo */
+.logo,
+.logo-centrado {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 350px;
+  height: auto;
+}
+
+/* Estilos de formulario */
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-container form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Footer y elementos legales */
+footer {
+  margin-top: auto;
+  padding: 5px;
+  background-color: #f0f0f0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.legal-info,
+.legal-info a {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.legal-info a:hover {
+  text-decoration: underline;
+}
+
+/* Mensajes y menú */
+.error,
+.mensaje-error {
+  background-color: rgb(216, 86, 86);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #6062b5;
+  font-weight: bold;
+  font-size: large;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+  color: #612f80;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.contenido {
+  margin-bottom: 10px;
+}
+
+.mensaje-exito {
+  color: #ffffff;
+  background-color: #4caf50; /* Verde para éxito */
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.width {
+  width: 15%;
+  display: flex;
+  margin: 0 au;
+}
+
+/* Estilos generales del contenedor */
+.container {
+  text-align: center; /* Centrar contenido */
+}
+
+/* Estilos para el menú */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Ajusta según el tamaño deseado */
+  gap: 20px; /* Espacio entre los botones */
+  justify-content: center;
+  padding: 20px;
+}
+
+.menu a {
+  display: inline-block;
+  background-color: #007bff; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  text-decoration: none; /* Quitar el subrayado */
+  padding: 15px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  font-weight: bold; /* Tamaño del texto */
+}
+
+.menu a img {
+  width: 50px; /* Ajustar tamaño del icono */
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.menu a:hover, .menu a:focus {
+  transform: translateY(-5px); /* Efecto de levantamiento */
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Ajustes adicionales para mejorar la accesibilidad */
+.menu a:focus {
+  outline: 2px solid #0056b3; /* Contorno para foco de teclado */
+  outline-offset: 2px;
+}
+.estado-aceptada {
+  color: green;
+  font-weight: bold;
+}
+
+.estado-rechazada {
+  color: red;
+  font-weight: bold;
+}
+
+.texto{
+  display: inline-block;
+  color: #6062b5; /* Color del texto */
+  font-weight: bold; /* Tamaño del texto */
+}
